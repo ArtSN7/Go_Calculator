@@ -2,20 +2,30 @@ package main
 
 
 import (
-  "gioui.org/app"
+	"log"
+	"os"
+
+	"gioui.org/app"
+	"gioui.org/unit"
+
 )
 
 
+// start
 func main() {
-  go func() {
+	go func() {
 
-    // create new window
-    w := app.NewWindow()
+		w := app.NewWindow(
+			app.Title("CALCULATOR"),
+			app.Size(unit.Dp(400), unit.Dp(700)),
+		)
 
-    // listening for events in the window.
-    for range w.Events() {}
+		if err := maker(w); err != nil {
+			log.Fatal(err)
+		}
 
-  }()
-  
-  app.Main()
+		os.Exit(0)
+	}()
+
+	app.Main()
 }

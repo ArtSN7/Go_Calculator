@@ -20,6 +20,7 @@ func maker(w *app.Window) error {
 	var ops op.Ops
 
 	var oneButton, twoButton, threeButton, fourButton, fiveButton, sixButton, sevenButton, eightButton, nineButton, zeroButton, clearButton, plusButton, minusButton, devideButton, multButton, equalButton widget.Clickable
+	//var inputButton widget.Clickable
 
 	th := material.NewTheme()
 
@@ -28,6 +29,8 @@ func maker(w *app.Window) error {
 		switch e := e.(type) {
 
 		case system.FrameEvent:
+
+			// buttons 
 			gtx := layout.NewContext(&ops, e)
 			layout.Flex{
 				Axis: layout.Horizontal,
@@ -310,7 +313,7 @@ func maker(w *app.Window) error {
 			)
 			e.Frame(gtx.Ops)
 
-
+        
 		case system.DestroyEvent:
 			return e.Err
 		}

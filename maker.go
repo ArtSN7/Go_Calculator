@@ -20,7 +20,7 @@ func maker(w *app.Window) error {
 	var ops op.Ops
 
 	var oneButton, twoButton, threeButton, fourButton, fiveButton, sixButton, sevenButton, eightButton, nineButton, zeroButton, clearButton, plusButton, minusButton, devideButton, multButton, equalButton widget.Clickable
-	//var inputButton widget.Clickable
+	var inputButton widget.Clickable
 
 	th := material.NewTheme()
 
@@ -29,7 +29,6 @@ func maker(w *app.Window) error {
 		switch e := e.(type) {
 
 		case system.FrameEvent:
-
 			// buttons 
 			gtx := layout.NewContext(&ops, e)
 			layout.Flex{
@@ -37,11 +36,28 @@ func maker(w *app.Window) error {
 				Spacing: layout.Spacing(2),
 
 			}.Layout(gtx,
-                    //1
+                
+				//Answer
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
 						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
+			
+					return margins.Layout(gtx,
+						func(gtx C) D {
+						    btn := material.Button(th, &inputButton, "There will be ur input ( press = to get a result )")
+						    return btn.Layout(gtx)
+						},
+					)
+				},),
+
+                    //1
+				layout.Rigid(func(gtx C) D {
+					margins := layout.Inset{
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -58,7 +74,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -76,7 +92,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -93,7 +109,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -110,7 +126,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -127,7 +143,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -144,7 +160,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -161,7 +177,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -178,7 +194,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -195,7 +211,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -212,7 +228,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -229,7 +245,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -245,7 +261,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -261,7 +277,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -278,7 +294,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
@@ -294,7 +310,7 @@ func maker(w *app.Window) error {
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
-						Bottom: unit.Dp(5),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			

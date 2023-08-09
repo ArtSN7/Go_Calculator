@@ -17,9 +17,9 @@ func main() {
 
 		w := app.NewWindow(
 			app.Title("CALCULATOR"),
-			app.Size(unit.Dp(800), unit.Dp(120)),
-      app.MaxSize(unit.Dp(800), unit.Dp(120)),
-      app.MinSize(unit.Dp(800), unit.Dp(120)),
+			app.Size(unit.Dp(1000), unit.Dp(125)),
+      app.MaxSize(unit.Dp(1000), unit.Dp(125)),
+      app.MinSize(unit.Dp(1000), unit.Dp(125)),
 		)
 
 		if err := maker(w); err != nil {

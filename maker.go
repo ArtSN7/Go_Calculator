@@ -336,11 +336,50 @@ func maker(w *app.Window) error {
 			)
 			e.Frame(gtx.Ops)
 
-// отвечает за проверку нажатий на кнопку
+        // отвечает за проверку нажатий на кнопку
 
-        if inputButton.Clicked(){
-			input_text = "               КНОПКУ НАЖАЛИ                       " // около 50 знаков надо для верного размера кнопки
+		var first_number, second_number, symbol string
+		var first_number_was, second_number_was, symbol_was bool
+
+		first_number_was = false 
+		second_number_was = false
+		symbol_was = false
+
+		first_number = ""
+		second_number = ""
+		symbol = ""
+
+		//кнопка очищения
+        if clearButton.Clicked(){
+			first_number_was = false 
+			second_number_was = false
+			symbol_was = false
+	
+			first_number = ""
+			second_number = ""
+			symbol = ""
+			input_text = "There will be ur input ( press = to get a result )"
 		}
+
+        // около 50 знаков надо для верного размера кнопки
+
+        // кнопки чисел
+        if zeroButton.Clicked(){
+			if first_number_was{
+				if second_number_was{
+					second_number += "0"
+
+				} else if symbol_was == false{
+					first_number += "0"
+				}}}
+
+        
+
+
+
+
+
+
 
 
 

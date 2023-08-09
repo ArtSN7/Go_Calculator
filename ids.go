@@ -1,3 +1,6 @@
+package main
+
+import "fmt"
 
 type Calculator struct {
    a int

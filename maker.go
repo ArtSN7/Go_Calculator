@@ -37,9 +37,9 @@ func maker(w *app.Window) error {
                     //1
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(1),
-						Bottom: unit.Dp(3),
-						Right:  unit.Dp(1),
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
 						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
@@ -54,10 +54,10 @@ func maker(w *app.Window) error {
 					//2
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(1),
-						Bottom: unit.Dp(75),
-						Right:  unit.Dp(5),
-						Left:   unit.Dp(7),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -72,10 +72,10 @@ func maker(w *app.Window) error {
 					//3
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(1),
-						Bottom: unit.Dp(3),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -89,10 +89,10 @@ func maker(w *app.Window) error {
 					//4
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -106,10 +106,10 @@ func maker(w *app.Window) error {
 					//5
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -123,10 +123,10 @@ func maker(w *app.Window) error {
 					//6
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -140,10 +140,10 @@ func maker(w *app.Window) error {
 					//7
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -157,10 +157,10 @@ func maker(w *app.Window) error {
 					//8
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -174,10 +174,10 @@ func maker(w *app.Window) error {
 					//9
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -191,10 +191,10 @@ func maker(w *app.Window) error {
 					//0
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -208,10 +208,10 @@ func maker(w *app.Window) error {
 					//clear
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -225,10 +225,10 @@ func maker(w *app.Window) error {
 					//=
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -241,10 +241,10 @@ func maker(w *app.Window) error {
 				//+
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -257,10 +257,10 @@ func maker(w *app.Window) error {
 				//-
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -274,10 +274,10 @@ func maker(w *app.Window) error {
 				//*
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -290,10 +290,10 @@ func maker(w *app.Window) error {
 				// %
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(80),
+						Bottom: unit.Dp(5),
+						Right:  unit.Dp(0),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {

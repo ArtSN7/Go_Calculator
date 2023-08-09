@@ -2,6 +2,7 @@ package main
 
 
 import (
+
 	"gioui.org/app"
 	"gioui.org/io/system"
 	"gioui.org/layout"
@@ -9,6 +10,7 @@ import (
 	"gioui.org/unit"
 	"gioui.org/widget"
 	"gioui.org/widget/material"
+
 )
 
 
@@ -21,6 +23,11 @@ func maker(w *app.Window) error {
 
 	var oneButton, twoButton, threeButton, fourButton, fiveButton, sixButton, sevenButton, eightButton, nineButton, zeroButton, clearButton, plusButton, minusButton, devideButton, multButton, equalButton widget.Clickable
 	var inputButton widget.Clickable
+
+
+    var input_text string
+    input_text = "There will be ur input ( press = to get a result )"
+
 
 	th := material.NewTheme()
 
@@ -47,7 +54,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &inputButton, "There will be ur input ( press = to get a result )")
+						    btn := material.Button(th, &inputButton, input_text)
 						    return btn.Layout(gtx)
 						},
 					)
@@ -322,14 +329,21 @@ func maker(w *app.Window) error {
 					)
 				},),
 			
-
+        
 
 
 		// the end of layout.Rigid()
 			)
 			e.Frame(gtx.Ops)
 
-        
+// отвечает за проверку нажатий на кнопку
+
+        if inputButton.Clicked(){
+			input_text = "               КНОПКУ НАЖАЛИ                       " // около 50 знаков надо для верного размера кнопки
+		}
+
+
+
 		case system.DestroyEvent:
 			return e.Err
 		}

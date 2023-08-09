@@ -30,17 +30,17 @@ func maker(w *app.Window) error {
 		case system.FrameEvent:
 			gtx := layout.NewContext(&ops, e)
 			layout.Flex{
-				Axis: layout.Vertical,
-				Spacing: layout.SpaceStart,
+				Axis: layout.Horizontal,
+				Spacing: layout.Spacing(2),
 
 			}.Layout(gtx,
                     //1
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(1),
-						Bottom: unit.Dp(15),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Bottom: unit.Dp(3),
+						Right:  unit.Dp(1),
+						Left:   unit.Dp(3),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -54,10 +54,10 @@ func maker(w *app.Window) error {
 					//2
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(16),
-						Bottom: unit.Dp(20),
-						Right:  unit.Dp(35),
-						Left:   unit.Dp(35),}
+						Top:    unit.Dp(1),
+						Bottom: unit.Dp(75),
+						Right:  unit.Dp(5),
+						Left:   unit.Dp(7),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
@@ -72,8 +72,8 @@ func maker(w *app.Window) error {
 					//3
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
+						Top:    unit.Dp(1),
+						Bottom: unit.Dp(3),
 						Right:  unit.Dp(35),
 						Left:   unit.Dp(35),}
 			

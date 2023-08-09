@@ -19,7 +19,7 @@ func maker(w *app.Window) error {
 
 	var ops op.Ops
 
-	var startButton widget.Clickable
+	var oneButton, twoButton, threeButton, fourButton, fiveButton, sixButton, sevenButton, eightButton, nineButton, zeroButton, clearButton, plusButton, minusButton, devideButton, multButton, equalButton widget.Clickable
 
 	th := material.NewTheme()
 
@@ -37,14 +37,14 @@ func maker(w *app.Window) error {
                     //1
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
+						Top:    unit.Dp(1),
+						Bottom: unit.Dp(15),
 						Right:  unit.Dp(35),
 						Left:   unit.Dp(35),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "1")
+						    btn := material.Button(th, &oneButton, "1")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -54,14 +54,14 @@ func maker(w *app.Window) error {
 					//2
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
-						Top:    unit.Dp(25),
-						Bottom: unit.Dp(25),
+						Top:    unit.Dp(16),
+						Bottom: unit.Dp(20),
 						Right:  unit.Dp(35),
 						Left:   unit.Dp(35),}
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &twoButton, "2")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -79,7 +79,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &threeButton, "3")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -96,7 +96,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &fourButton, "4")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -113,7 +113,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &fiveButton, "5")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -130,7 +130,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &sixButton, "6")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -147,7 +147,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &sevenButton, "7")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -164,7 +164,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &eightButton, "8")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -181,7 +181,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &nineButton, "9")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -198,7 +198,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &zeroButton, "0")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -215,7 +215,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &clearButton, "clear")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -232,7 +232,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &equalButton, "=")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -248,7 +248,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &plusButton, "+")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -264,7 +264,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &minusButton, "-")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -281,7 +281,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &multButton, "*")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -297,7 +297,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &startButton, "Start")
+						    btn := material.Button(th, &devideButton, "%")
 						    return btn.Layout(gtx)
 						},
 					)

@@ -215,7 +215,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &clearButton, "clear")
+						    btn := material.Button(th, &equalButton, "=")
 						    return btn.Layout(gtx)
 						},
 					)
@@ -232,7 +232,7 @@ func maker(w *app.Window) error {
 			
 					return margins.Layout(gtx,
 						func(gtx C) D {
-						    btn := material.Button(th, &equalButton, "=")
+						    btn := material.Button(th, &clearButton, "CLEAR")
 						    return btn.Layout(gtx)
 						},
 					)

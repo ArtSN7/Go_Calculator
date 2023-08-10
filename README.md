@@ -6,4 +6,4 @@ https://gioui.org/ - GIO library
 https://jonegil.github.io/gui-with-gio/egg_timer/ - tutor
 
 
-Запуск: go run main.go maker.go
+Запуск: go run main.go maker.go workers.go

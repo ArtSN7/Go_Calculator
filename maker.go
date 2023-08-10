@@ -1,7 +1,7 @@
 package main
 
-
 import (
+	"fmt"
 	"strconv"
 
 	"gioui.org/app"
@@ -11,7 +11,6 @@ import (
 	"gioui.org/unit"
 	"gioui.org/widget"
 	"gioui.org/widget/material"
-
 )
 
 
@@ -371,11 +370,11 @@ func maker(w *app.Window) error {
 			if first_number_was{
 				if second_number_was{
 					second_number += "0"
-					input_text += "0"
+					input_text = second_number
 
 				} else if !symbol_was{
 					first_number += "0"
-					input_text += "0"
+					input_text = first_number
 				}}}
         
 		if oneButton.Clicked(){
@@ -528,6 +527,15 @@ func maker(w *app.Window) error {
 			}else{
 				input_text = "ERROR"
 			}
+
+			//cleaning
+			first_number_was = false 
+			second_number_was = false
+			symbol_was = false
+		
+			first_number = ""
+			second_number = ""
+			symbol = ""
 		}
         
 
@@ -542,7 +550,7 @@ func maker(w *app.Window) error {
 
 
 func calculation(a string, b string, symbol string) string{
-    answer := ""
+    answer := 0
 
 	i, err := strconv.Atoi(a)
 
@@ -559,13 +567,15 @@ func calculation(a string, b string, symbol string) string{
     }
     
 	switch{
-	case symbol == "+": answer = string(i + j)
-	case symbol == "-": answer = string(i - j)
-	case symbol == "*": answer = string(i * j)
-	case symbol == "%": answer = string(i / j)
+	case symbol == "+": answer = i + j
+	case symbol == "-": answer = i - j
+	case symbol == "*": answer = i * j
+	case symbol == "%": answer = i / j
 	}
-    
-	return answer
+
+    fmt.Println(strconv.Itoa(answer))
+
+	return strconv.Itoa(answer)
 	}
 
 

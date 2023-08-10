@@ -1,7 +1,10 @@
 package main
 
+
 import "strconv"
 
+
+//отвечает за подсчет 
 func calculation(a string, b string, symbol string) string{
     answer := 0
 
@@ -32,6 +35,7 @@ func calculation(a string, b string, symbol string) string{
 	}
 
 
+// отвечает за красивый вызов
 func GoodOutput(a string) string{
 	// 50 symbols
 	len_of_a := len(a)

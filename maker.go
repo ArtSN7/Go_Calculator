@@ -53,7 +53,7 @@ func maker(w *app.Window) error {
 
 			}.Layout(gtx,
                 
-				//Answer
+				//output
 				layout.Rigid(func(gtx C) D {
 					margins := layout.Inset{
 						Top:    unit.Dp(80),
@@ -359,8 +359,9 @@ func maker(w *app.Window) error {
 
 			input_text = "There will be ur input ( press = to get a result )"
 		}
+        
 
-        // около 50 знаков надо для верного размера кнопки
+		//можно добавить кнопку удаления числа 
 
         // кнопки чисел
         if zeroButton.Clicked(){
@@ -536,7 +537,7 @@ func maker(w *app.Window) error {
 		}
         
 
-		input_text = GoodOutput(input_text)
+		input_text = GoodOutput(input_text) // делаем output более красивым, чтобы кнопки не сильно отличались 
 
 		case system.DestroyEvent:
 			return e.Err
